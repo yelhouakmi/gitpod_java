@@ -1,6 +1,5 @@
 package fr.yelhouakmi.model;
 
-import java.lang.reflect.Array;
 import java.util.Map;
 
 public class Complex {
@@ -9,6 +8,13 @@ public class Complex {
     private String[] description;
     private Map<String, String> map;
 
+    public Complex(long id, String name, String[] description, Map<String, String> map) {
+        this.id = id;
+        this.name = name;
+        this.description = description;
+        this.map = map;
+    }
+    
     public long getId() {
         return id;
     }
